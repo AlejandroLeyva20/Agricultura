@@ -17,6 +17,11 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'UA-127075676-1');
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.materialboxed');
+        var instances = M.Materialbox.init(elems, options);
+      });
     </script>
     <title>Soluciones APM</title>
   </head>
@@ -79,12 +84,15 @@
     </li>
   </ul>
     <h4>Primera versión de nuestra solución</h4>
-    <img class="responsive-img" src="images/FirstVersion.jpeg">
+    <img class="materialboxed" class="responsive-img" width="500" src="images/FirstVersion.jpeg">
+    <h4>Primera versión de nuestra solución</h4>
+    <img class="materialboxed" class="responsive-img" width="500" src="images/ExpoFlyer.png">
+
     <h4>Retroalimentación del experto</h4>
-    <img class="circle responsive-img" src="images/Experto2.jpg" width="460" height="300">
+    <img width="300" class="circle responsive-img" src="images/Experto2.jpg" width="460" height="300">
     <p style="font-size:20px">Lizandro Corral<br>Ing. Innovación agrícola sustentable</p>
-    <p ALIGN="justify" style="font-size:20px">
-      "Esas expos podrían servir para que la gente cambie su estilo de tratar su cosecha y no estar vendiendo su producto contaminado con agroquímicos."
+    <p ALIGN="center" style="font-size:20px">
+      "Esas expos podrían servir para que la gente cambie su estilo de tratar su cosecha y no estar vendiendo producto contaminado con agroquímicos."
     </p>
     <a href="FeedbackExpert.html" text-align="right">Leer Retroalimentación completa</a>
     <div class="row">
